@@ -60,7 +60,7 @@ Get the current user's device information (only returns information about one - 
 
 Get the user's goals within a period. 
 
-**Required:** Start Date and End Date.
+**Required:** Start Date and End Date (Date object or "YYYY-MM-DD" string).
 
 ```ruby
 @client.get_goals(start_date: Date.today - 1.week, end_date: Date.today)
@@ -70,7 +70,7 @@ Get the user's goals within a period.
 
 Get a summary of the user's activity within a period.
 
-**Required:** Start Date and End Date.
+**Required:** Start Date and End Date (Date object or "YYY-MM-DD" string).
 
 *Optional: Detail (true/false). Defaults to false.*
 
@@ -82,7 +82,7 @@ Get a summary of the user's activity within a period.
 
 Get the user's sessions within a period. 
 
-**Required:** Start Date and End Date.
+**Required:** Start Date and End Date (Date object or "YYYY-MM-DD" string).
 
 ```ruby
 @client.get_sessions(start_date: Date.today - 1.week, end_date: Date.today)
@@ -92,7 +92,7 @@ Get the user's sessions within a period.
 
 Get the user's sleeps within a period. 
 
-**Required:** Start Date and End Date.
+**Required:** Start Date and End Date (Date object or "YYYY-MM-DD" string).
 
 ```ruby
 @client.get_sleeps(start_date: Date.today - 1.week, end_date: Date.today)

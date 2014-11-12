@@ -42,7 +42,7 @@ See the [Misfit Resource Reference](https://build.misfit.com/docs/references#API
 
 ### Profile
 
-Gets the current users profile information
+Gets the current user's profile information
 
 ```ruby
 @client.get_profile
@@ -50,7 +50,7 @@ Gets the current users profile information
 
 ### Device
 
-Get the current users device information (only returns information about one - current - device)
+Get the current user's device information (only returns information about one - current - device)
 
 ```ruby
 @client.get_device

@@ -72,7 +72,7 @@ Get a summary of the user's activity within a period.
 
 **Required:** Start Date and End Date.
 
-*Optional:* Detail (true/false). Defaults to false.
+*Optional: Detail (true/false). Defaults to false.*
 
 ```ruby
 @client.get_summary(start_date: Date.today - 1.week, end_date: Date.today, detail: true)

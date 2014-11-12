@@ -70,7 +70,7 @@ Get the user's goals within a period.
 
 Get a summary of the user's activity within a period.
 
-**Required:** Start Date and End Date (Date object or "YYY-MM-DD" string).
+**Required:** Start Date and End Date (Date object or "YYYY-MM-DD" string).
 
 *Optional: Detail (true/false). Defaults to false.*
 

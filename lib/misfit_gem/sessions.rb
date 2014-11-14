@@ -13,7 +13,7 @@ module MisfitGem
       
       check_date_range(start_date_string, end_date_string)
       
-      parameters = "start_date=#{start_date_string}&end_date=#{end_date_string}&detail=#{detail}"
+      parameters = "start_date=#{start_date_string}&end_date=#{end_date_string}"
             
       get("/user/me/activity/sessions?#{parameters}")
       

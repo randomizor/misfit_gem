@@ -29,7 +29,6 @@ module MisfitGem
       @secret = opts[:secret]
 
       @proxy = opts[:proxy] if opts[:proxy]
-      @user_id = opts[:user_id] || '-'
 
       @api_version = API_VERSION
     end

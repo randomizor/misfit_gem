@@ -66,6 +66,15 @@ Get the user's goals within a period.
 @client.get_goals(start_date: Date.today - 1.week, end_date: Date.today)
 ```
 
+
+Get a specific goal.
+
+**Required:** ID.
+
+```ruby
+@client.get_goal(id: "12345")
+```
+
 ### Summary
 
 Get a summary of the user's activity within a period.
@@ -88,6 +97,15 @@ Get the user's sessions within a period.
 @client.get_sessions(start_date: Date.today - 1.week, end_date: Date.today)
 ```
 
+
+Get a specific session.
+
+**Required:** ID.
+
+```ruby
+@client.get_session(id: "12345")
+```
+
 ### Sleep
 
 Get the user's sleeps within a period. 
@@ -96,6 +114,15 @@ Get the user's sleeps within a period.
 
 ```ruby
 @client.get_sleeps(start_date: Date.today - 1.week, end_date: Date.today)
+```
+
+
+Get a specific sleep.
+
+**Required:** ID.
+
+```ruby
+@client.get_sleep(id: "12345")
 ```
 
 ## Disclaimer

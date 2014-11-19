@@ -19,5 +19,17 @@ module MisfitGem
       
     end
     
+    def get_sleep(opts)
+
+      missing = [:id] - opts.keys
+      if missing.size > 0
+        raise MisfitGem::InvalidArgumentError, "Missing required options: #{missing.join(',')}"
+      end
+
+      get("/user/me/activity/sleeps/#{opts[:id]}")
+
+    end
+      
   end
+    
 end

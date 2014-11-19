@@ -184,5 +184,54 @@ describe MisfitGem::Client do
     end
         
   end
-      
+  
+  describe '#get_sleep' do
+    
+    before(:each) do
+      @opts = {id: "12345"}
+    end
+
+    it 'raises an exception if the :id value is missing' do
+      @opts.delete :id
+      @opts[:invalid] = "Invalid"
+      expect {
+        @client.get_sleep @opts
+      }.to raise_error(MisfitGem::InvalidArgumentError)
+    end
+    
+  end    
+  
+  describe '#get_goal' do
+    
+    before(:each) do
+      @opts = {id: "12345"}
+    end
+
+    it 'raises an exception if the :id value is missing' do
+      @opts.delete :id
+      @opts[:invalid] = "Invalid"
+      expect {
+        @client.get_goal @opts
+      }.to raise_error(MisfitGem::InvalidArgumentError)
+    end
+    
+  end
+  
+  describe '#get_session' do
+    
+    before(:each) do
+      @opts = {id: "12345"}
+    end
+
+    it 'raises an exception if the :id value is missing' do
+      @opts.delete :id
+      @opts[:invalid] = "Invalid"
+      expect {
+        @client.get_session @opts
+      }.to raise_error(MisfitGem::InvalidArgumentError)
+    end
+    
+  end    
+    
+  
 end

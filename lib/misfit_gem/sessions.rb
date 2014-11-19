@@ -19,5 +19,16 @@ module MisfitGem
       
     end
     
+    def get_session(opts)
+
+      missing = [:id] - opts.keys
+      if missing.size > 0
+        raise MisfitGem::InvalidArgumentError, "Missing required options: #{missing.join(',')}"
+      end
+
+      get("/user/me/activity/sessions/#{opts[:id]}")
+
+    end
+    
   end
 end

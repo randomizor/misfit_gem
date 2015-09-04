@@ -42,6 +42,7 @@ module MisfitGem
     end
 
     def reconnect(token, secret)
+      @access_token = nil
       @token = token
       @secret = secret
       access_token
